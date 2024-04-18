@@ -214,6 +214,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
 --target_col idh_status \
 --task Ebrains_IDH1Mutation \
 --k 20 \
+--lr 0.0002 \
 --max_epochs 20 \
 --es_min_epochs 10 \
 --es_patience 5 \
@@ -250,6 +251,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
 --target_col idh_status \
 --task Ebrains_IDH1Mutation \
 --k 20 \
+--lr 0.0002 \
 --max_epochs 20 \
 --es_min_epochs 10 \
 --es_patience 5 \
@@ -284,6 +286,7 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
 --target_col idh_status \
 --task Ebrains_IDH1Mutation \
 --k 20 \
+--lr 0.0002 \
 --max_epochs 20 \
 --es_min_epochs 10 \
 --es_patience 5 \
