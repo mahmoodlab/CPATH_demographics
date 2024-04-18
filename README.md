@@ -11,7 +11,7 @@
 In this repository, we provide the code to reproduce our results of race-stratified and overall evaluation of *IDH1* mutation prediction in gliomas using Whole Slide Images (WSIs) and multiple instance learning (MIL). We train models on EBRAINS brain tumor atlas and test on TCGA-GBMLGG. Our study also includes subtyping of breast and lung carcinomas. However, since the evaluation of breast and lung subtyping tasks is based on private WSIs collected from Mass General Brigham, Boston, we are unable to make this data public.  
 
 ## Installation Guide for Linux (using anaconda)
-### Pre-requisities: 
+### Prerequisites: 
 - Linux (Tested on Ubuntu 18.04)
 - NVIDIA GPU (Tested on Nvidia GeForce RTX 3090 Ti) with CUDA 11.7
 - Python (version 3.8.13), PyTorch (version 2.0.0, CUDA 11.7), OpenSlide (version 4.3.1), openslide-python (version 1.2.0), Pillow (version 9.3.0), Scikit-learn (version 1.2.1), Matplotlib (version 3.7.1), Seaborn (version 0.12.2), Numpy (version 1.24.4), pandas (version 1.5.3), slideflow (version 2.1.0), smooth-topk.
@@ -24,7 +24,7 @@ To download diagnostic WSIs (formatted as .svs files), molecular feature data an
 To process WSIs, first, the tissue regions in each biopsy slide are segmented using Otsu's Segmentation on a downsampled WSI using OpenSlide. Then, 256 x 256 patches without spatial overlapping are extracted from the segmented tissue regions at the desired magnification. We use three different feature encoders: $\text{ResNet50}$ trained on ImageNet ([ResNet50IN](https://github.com/mahmoodlab/CLAM)), Swin-T transformer trained on histology slides ([CTransPath](https://github.com/Xiyue-Wang/TransPath)), and a Vision Transformer Large trained on histology slides ([UNI](https://github.com/mahmoodlab/UNI)). We also extract Macenko stain normalized features using these feature extractors. We use the [CLAM](https://github.com/mahmoodlab/CLAM) toolkit to do all pre-processing.  
 
 ## Training-Validation splits on EBRAINS
-`splits_MonteCarlo` contains the 20-fold label stratified Monte Carlo splits for *IDH1* mutation prediction. The folder also contains the indepedent test cohort TCGA-GBMLGG and its associated metadata.
+`splits_MonteCarlo` contains the 20-fold label-stratified Monte Carlo splits for *IDH1* mutation prediction. The folder also contains the indepedent test cohort TCGA-GBMLGG and its associated metadata.
 
 ## Exploring modeling techniques
 We experiment with various modeling choices for all components of the typical computational pathology pipeline:
