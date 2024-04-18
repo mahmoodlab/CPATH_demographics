@@ -8,7 +8,7 @@
 
 
 ## Overview of repository
-In this repository, we provide the code to reproduce our results of race-startified and overall evaluation of *IDH1* mutation prediction in gliomas using Whole Slide Images (WSIs) and multiple instance learning (MIL) algorithms. We train models on EBRAINS brain tumor atlas and test on TCGA-GBMLGG. Our study also includes subtyping of breast and lung carcinomas. However, since the evaluation of breast and lung subtyping tasks is based on private WSIs collected from Mass General Brigham, Boston, we are unable to make this data public.  
+In this repository, we provide the code to reproduce our results of race-stratified and overall evaluation of *IDH1* mutation prediction in gliomas using Whole Slide Images (WSIs) and multiple instance learning (MIL). We train models on EBRAINS brain tumor atlas and test on TCGA-GBMLGG. Our study also includes subtyping of breast and lung carcinomas. However, since the evaluation of breast and lung subtyping tasks is based on private WSIs collected from Mass General Brigham, Boston, we are unable to make this data public.  
 
 ## Installation Guide for Linux (using anaconda)
 ### Pre-requisities: 
