@@ -41,7 +41,7 @@ Once you have segmented tissue, created patches, and extracted the features, you
 After you have trained and evaluated your model, you can use `analysis/compute_TPR_disparity.py` to compute the race-startified (white, Asian, and Black patients) and overall performance metrics (AUC, F1) and fairness (TPR disparity) metrics. When prompted to provide `path/to/test/df`, you can use the path to the independent test set csv (i.e., `./splits_MonteCarlo/TCGA_GBMLGG/test.csv`). 
 
 ## Cite
-If you find our work useful in your research or if you use parts of this code please consider citing our [paper](https://doi.org/10.1038/s41591-024-02885-z](https://www.nature.com/articles/s41591-024-02885-z)):
+If you find our work useful in your research or if you use parts of this code please consider citing our [paper](https://www.nature.com/articles/s41591-024-02885-z):
 
 Vaidya, A., Chen, R.J., Williamson, D.F.K., et al. Demographic bias in misdiagnosis by computational pathology models. Nat Med (2024). [https://doi.org/10.1038/s41591-024-02885-z](https://www.nature.com/articles/s41591-024-02885-z)
 
